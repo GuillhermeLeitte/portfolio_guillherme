@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../static/css/style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <title>Portfólio</title>
+</head>
+
+<body>
+
+   <nav>
+      <ul>
+         <li> <a href="#first">Inicio</a> </li>
+         <li> <a href="#sobre">Sobre mim</a> </li>
+         <li> <a href="#projetos">Projetos</a> </li>
+         <li> <a href="#habilidades">Habilidades</a> </li>
+         <li> <a href="#contato">Contato</a> </li>
+      </ul>
+   </nav>
+
+   <section id="first">
+      <div id="first-text">
+         <p>"O sucesso é a soma de pequenos esforços repetidos dia após dia"
+         </p>
+         <span>Robert Collier</span>
+      </div>
+
+      <div id="img-rocket">
+         <img src="../static/img/To the stars-cuate.png" alt="Foguete">
+      </div>
+   </section>
+
+   <section id="sobre">
+      <div id="img-perfil">
+         <img src="../static/img/imagem01-removebg-preview.png" alt="Imagem de perfil">
+      </div>
+
+      <div id="texto-sobre">
+         <p>
+            QUEM SOU? <br>
+            Copo meio cheio, sagitariano, cearense (nascido em São paulo - SP), 29 anos...
+            
+            <br>
+            GOSTO DE ?<br>
+            Futebol , aprender algo novo e estar com a família.
+            
+            <br>
+            CARREIRA?<br>
+            Transição ( saindo comércio , entrando tecnologia ).
+            Profissional com experiência em multinacionais líderes nos setores de bens de consumo e de serviços,
+            tendo me especializado em encantar clientes. No momento, em transição de carreira no setor de
+            tecnologia, com ênfase em desenvolvimento e programação ( Back end ). Tenho buscado estudar e me
+            especializar em PYTHON, C#, JavaScript, SQL, PostgreSQL, HTML, CSS. Vou ser Back end Developer!! ( estudando pra isso…)
+            <br>
+            
+            POR QUE TI?<br>
+            Porque não ? Sempre fui apaixonado por tecnologia, curioso ( por que aconteceu isso? Como fez isso? )
+         </p>
+      </div>
+   </section>
+
+
+   <section id="projetos">
+
+      <div>
+         <img src="../static/img/passatempo.png" alt="img-lorem">
+         <h2>Passatempo Predileto</h2>
+         <p>Site criado em aula , colocando em prática conhecimentos básicos de Css e Html. Onde mostramos qual o nosso passatempo predileto , com foto, vídeo e link executável.</p>
+         <a href="https://passatempo-predileto.netlify.app/" target="_blank"><button>Veja mais</button></a>
+      </div>
+
+      <div>
+         <img src="../static/img/mudanca_vida.png" alt="img-lorem">
+         <h2>Mudança de Vida</h2>
+         <p>Site criado, colocando em prática conhecimentos básicos de Css, Html, e JavaScript. Onde mostramos mudança na vida de um cantor famoso após a fama, com foto para cada momento e botão que muda a vida e a foto com um click.</p>
+         <a href="https://mudancanavida-gustavolima.netlify.app/" target="_blank"><button>Veja mais</button></a>
+      </div>
+
+      
+   </section>
+
+
+   <section id="habilidades">
+
+      <h2>Habilidades Técnicas</h2>
+
+      <p>HTML 5</p>
+      <div>
+         <span id="html5">70%</span>
+      </div>
+
+      <p>CSS 3</p>
+      <div>
+         <span id="css3">40%</span>
+      </div>
+
+      <p>JavaScript</p>
+      <div>
+         <span id="js">30%</span>
+      </div>
+
+      <p>Python</p>
+      <div>
+         <span id="python">70%</span>
+      </div>
+
+      <p>Flask</p>
+      <div>
+         <span id="flask">40%</span>
+      </div>
+
+      <p>SQL</p>
+      <div>
+         <span id="sql">40%</span>
+      </div>
+
+      <p>Cloud</p>
+      <div>
+         <span id="cloud">30%</span>
+      </div>
+   </section>
+
+   <section id="contato">
+
+      <div id="redes">
+         <h3>Se conecte comigo </h3>
+         <a href="https://www.linkedin.com/in/guillhermeleitte/" target="_blank">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+         </a>
+
+         <a href="https://github.com/GuillhermeLeitte" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+         </a>
+
+         <a href="https://www.instagram.com/guiigasdev/" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+         </a>
+      </div>
+
+      <h3>Mande uma mensagem</h3>
+
+      <form action='/send' method="POST">
+         <label for="nome">Nome</label>
+         <input type="text" placeholder="Digite seu nome" id="nome" name="nome">
+
+         <label for="email">E-mail</label>
+         <input type="email" placeholder="Digite seu email" id="email" name="email">
+
+
+         <label for="mensagem">Mensagem</label>
+         <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+
+         <button type="submit" id="enviar">Enviar</button>
+
+      </form>
+
+      <div id="carregamento">
+         <p>Enviando mensagem</p>
+         <div id="loader"></div>
+      </div>
+      
+
+   </section>
+
+   <footer>
+      <hr>
+      <p>Todos os direitos reservados: <a id="thiCodeLink">Guilherme Vieira</a> &copy;</p>
+   </footer>
+
+
+   <script src='../static/js/script.js'></script>
+
+</body>
+
+</html>
